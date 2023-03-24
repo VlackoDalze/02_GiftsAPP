@@ -1,0 +1,13 @@
+<div class="row">
+    <div    *ngFor="let gift of results"
+            class="col-md-4 col-sm-6 animate__animated animate__fadeIn">
+        
+            <div class="card">
+            <div class="card-body">
+                <img [src]="gift.images.downsized_medium.url" [alt]="gift.title"
+                class="card-img-top">
+                <p class="card-text">{{gift.title}}</p>
+            </div>
+        </div>
+    </div>
+</div>
